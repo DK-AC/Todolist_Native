@@ -2,9 +2,8 @@ import {StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
   todolist: {
-    padding: 20,
+    padding: 10,
     marginVertical: 8,
-    marginHorizontal: 16,
     borderWidth: 1,
   },
   todolistBox: {

@@ -6,6 +6,7 @@ import {addTodo} from '../../store/slices/todolist';
 import {Todolist} from './todolist';
 import {AddItemForm} from '../add-item-form';
 import {v1} from 'uuid';
+import {styles} from './todolists.style.ts';
 
 export const Todolists: FC = () => {
   const dispatch = useAppDispatch();
@@ -16,7 +17,7 @@ export const Todolists: FC = () => {
   };
 
   return (
-    <View>
+    <View style={styles.container}>
       <AddItemForm onCallback={addTodoHandle} />
       <FlatList
         data={todolists}
